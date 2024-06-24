@@ -23,12 +23,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, "build")));
+// // Serve static files from the React app
+// app.use(express.static(path.join(__dirname, "build")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "build"));
+// });
 
 // Routes
 app.use("/api/user", authRoutes);
