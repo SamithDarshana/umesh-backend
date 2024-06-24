@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const morgan = require("morgan");
 const cors = require("cors");
+const path = require("path");
 
 const brandRoutes = require("./routes/brandRoutes");
 const colorRoutes = require("./routes/colorRoutes");
